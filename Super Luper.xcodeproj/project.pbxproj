@@ -1,0 +1,973 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		733F024A2C262C120082F06B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 733F02492C262C120082F06B /* README.md */; };
+		733F024C2C262C5E0082F06B /* License in Resources */ = {isa = PBXBuildFile; fileRef = 733F024B2C262C5E0082F06B /* License */; };
+		73DE7E4E2C23BBBB008DBBA7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE7E4D2C23BBBB008DBBA7 /* ContentView.swift */; };
+		73DE7E522C23BBBB008DBBA7 /* ViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE7E512C23BBBB008DBBA7 /* ViewControllerRepresentable.swift */; };
+		73DE7E552C23BBBB008DBBA7 /* Synth.aif in Resources */ = {isa = PBXBuildFile; fileRef = 73DE7E542C23BBBB008DBBA7 /* Synth.aif */; };
+		73DE7E572C23BBBB008DBBA7 /* SimplePlayEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE7E562C23BBBB008DBBA7 /* SimplePlayEngine.swift */; };
+		73DE7E5A2C23BBBB008DBBA7 /* MIDIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE7E592C23BBBB008DBBA7 /* MIDIManager.swift */; };
+		73DE7E5C2C23BBBB008DBBA7 /* TypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE7E5B2C23BBBB008DBBA7 /* TypeAliases.swift */; };
+		73DE7E5F2C23BBBB008DBBA7 /* StringHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE7E5E2C23BBBB008DBBA7 /* StringHelpers.swift */; };
+		73DE7E622C23BBBB008DBBA7 /* AudioUnitHostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE7E612C23BBBB008DBBA7 /* AudioUnitHostModel.swift */; };
+		73DE7E642C23BBBB008DBBA7 /* AudioUnitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE7E632C23BBBB008DBBA7 /* AudioUnitViewModel.swift */; };
+		73DE7E662C23BBBB008DBBA7 /* Super_LuperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE7E652C23BBBB008DBBA7 /* Super_LuperApp.swift */; };
+		73DE7E692C23BBBB008DBBA7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73DE7E682C23BBBB008DBBA7 /* Preview Assets.xcassets */; };
+		73DE7E6B2C23BBBD008DBBA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73DE7E6A2C23BBBD008DBBA7 /* Assets.xcassets */; };
+		73DE7E882C23BBBD008DBBA7 /* Super LuperExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 73DE7E872C23BBBD008DBBA7 /* Super LuperExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		73DE7E922C23BBBD008DBBA7 /* ParameterSpecBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE7E912C23BBBD008DBBA7 /* ParameterSpecBase.swift */; };
+		73DE7E952C23BBBD008DBBA7 /* CrossPlatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE7E942C23BBBD008DBBA7 /* CrossPlatform.swift */; };
+		73DE7E972C23BBBD008DBBA7 /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE7E962C23BBBD008DBBA7 /* String+Utils.swift */; };
+		73DE7E9B2C23BBBD008DBBA7 /* Super_LuperExtensionAudioUnit.mm in Sources */ = {isa = PBXBuildFile; fileRef = 73DE7E9A2C23BBBD008DBBA7 /* Super_LuperExtensionAudioUnit.mm */; };
+		73DE7E9E2C23BBBD008DBBA7 /* Super_LuperExtensionAUProcessHelper.hpp in Resources */ = {isa = PBXBuildFile; fileRef = 73DE7E9D2C23BBBD008DBBA7 /* Super_LuperExtensionAUProcessHelper.hpp */; };
+		73DE7EA02C23BBBD008DBBA7 /* Super_LuperExtensionBufferedAudioBus.hpp in Resources */ = {isa = PBXBuildFile; fileRef = 73DE7E9F2C23BBBD008DBBA7 /* Super_LuperExtensionBufferedAudioBus.hpp */; };
+		73DE7EA42C23BBBD008DBBA7 /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE7EA32C23BBBD008DBBA7 /* Parameters.swift */; };
+		73DE7EA72C23BBBD008DBBA7 /* Super_LuperExtensionDSPKernel.hpp in Resources */ = {isa = PBXBuildFile; fileRef = 73DE7EA62C23BBBD008DBBA7 /* Super_LuperExtensionDSPKernel.hpp */; };
+		73DE7EAA2C23BBBD008DBBA7 /* Super_LuperExtensionMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE7EA92C23BBBD008DBBA7 /* Super_LuperExtensionMainView.swift */; };
+		73DE7EAC2C23BBBD008DBBA7 /* ParameterSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE7EAB2C23BBBD008DBBA7 /* ParameterSlider.swift */; };
+		73DE7EB12C23BBBD008DBBA7 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 73DE7EB02C23BBBD008DBBA7 /* Base */; };
+		73DE7EB32C23BBBD008DBBA7 /* ObservableAUParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE7EB22C23BBBD008DBBA7 /* ObservableAUParameter.swift */; };
+		73DE7EB52C23BBBD008DBBA7 /* AudioUnitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE7EB42C23BBBD008DBBA7 /* AudioUnitViewController.swift */; };
+		73DE7EC72C244D68008DBBA7 /* LooperButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DE7EC62C244D68008DBBA7 /* LooperButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		73DE7E722C23BBBD008DBBA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73DE7E422C23BBBB008DBBA7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73DE7E492C23BBBB008DBBA7;
+			remoteInfo = "Super Luper";
+		};
+		73DE7E7C2C23BBBD008DBBA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73DE7E422C23BBBB008DBBA7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73DE7E492C23BBBB008DBBA7;
+			remoteInfo = "Super Luper";
+		};
+		73DE7E892C23BBBD008DBBA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73DE7E422C23BBBB008DBBA7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73DE7E862C23BBBD008DBBA7;
+			remoteInfo = "Super LuperExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		73DE7EBC2C23BBBD008DBBA7 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				73DE7E882C23BBBD008DBBA7 /* Super LuperExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		733F02492C262C120082F06B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		733F024B2C262C5E0082F06B /* License */ = {isa = PBXFileReference; lastKnownFileType = text; path = License; sourceTree = "<group>"; };
+		73DE7E4A2C23BBBB008DBBA7 /* Super Luper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Super Luper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		73DE7E4D2C23BBBB008DBBA7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		73DE7E512C23BBBB008DBBA7 /* ViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRepresentable.swift; sourceTree = "<group>"; };
+		73DE7E542C23BBBB008DBBA7 /* Synth.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = Synth.aif; sourceTree = "<group>"; };
+		73DE7E562C23BBBB008DBBA7 /* SimplePlayEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePlayEngine.swift; sourceTree = "<group>"; };
+		73DE7E592C23BBBB008DBBA7 /* MIDIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDIManager.swift; sourceTree = "<group>"; };
+		73DE7E5B2C23BBBB008DBBA7 /* TypeAliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAliases.swift; sourceTree = "<group>"; };
+		73DE7E5E2C23BBBB008DBBA7 /* StringHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringHelpers.swift; sourceTree = "<group>"; };
+		73DE7E612C23BBBB008DBBA7 /* AudioUnitHostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitHostModel.swift; sourceTree = "<group>"; };
+		73DE7E632C23BBBB008DBBA7 /* AudioUnitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitViewModel.swift; sourceTree = "<group>"; };
+		73DE7E652C23BBBB008DBBA7 /* Super_LuperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Super_LuperApp.swift; sourceTree = "<group>"; };
+		73DE7E682C23BBBB008DBBA7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		73DE7E6A2C23BBBD008DBBA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		73DE7E6C2C23BBBD008DBBA7 /* Super_Luper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Super_Luper.entitlements; sourceTree = "<group>"; };
+		73DE7E712C23BBBD008DBBA7 /* Super LuperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Super LuperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		73DE7E7B2C23BBBD008DBBA7 /* Super LuperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Super LuperUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		73DE7E872C23BBBD008DBBA7 /* Super LuperExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Super LuperExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		73DE7E8F2C23BBBD008DBBA7 /* Super_LuperExtension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Super_LuperExtension-Bridging-Header.h"; sourceTree = "<group>"; };
+		73DE7E912C23BBBD008DBBA7 /* ParameterSpecBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterSpecBase.swift; sourceTree = "<group>"; };
+		73DE7E942C23BBBD008DBBA7 /* CrossPlatform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossPlatform.swift; sourceTree = "<group>"; };
+		73DE7E962C23BBBD008DBBA7 /* String+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
+		73DE7E992C23BBBD008DBBA7 /* Super_LuperExtensionAudioUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Super_LuperExtensionAudioUnit.h; sourceTree = "<group>"; };
+		73DE7E9A2C23BBBD008DBBA7 /* Super_LuperExtensionAudioUnit.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Super_LuperExtensionAudioUnit.mm; sourceTree = "<group>"; };
+		73DE7E9D2C23BBBD008DBBA7 /* Super_LuperExtensionAUProcessHelper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Super_LuperExtensionAUProcessHelper.hpp; sourceTree = "<group>"; };
+		73DE7E9F2C23BBBD008DBBA7 /* Super_LuperExtensionBufferedAudioBus.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Super_LuperExtensionBufferedAudioBus.hpp; sourceTree = "<group>"; };
+		73DE7EA22C23BBBD008DBBA7 /* Super_LuperExtensionParameterAddresses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Super_LuperExtensionParameterAddresses.h; sourceTree = "<group>"; };
+		73DE7EA32C23BBBD008DBBA7 /* Parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameters.swift; sourceTree = "<group>"; };
+		73DE7EA62C23BBBD008DBBA7 /* Super_LuperExtensionDSPKernel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Super_LuperExtensionDSPKernel.hpp; sourceTree = "<group>"; };
+		73DE7EA92C23BBBD008DBBA7 /* Super_LuperExtensionMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Super_LuperExtensionMainView.swift; sourceTree = "<group>"; };
+		73DE7EAB2C23BBBD008DBBA7 /* ParameterSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterSlider.swift; sourceTree = "<group>"; };
+		73DE7EB02C23BBBD008DBBA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = AudioUnitViewController.xib; sourceTree = "<group>"; };
+		73DE7EB22C23BBBD008DBBA7 /* ObservableAUParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableAUParameter.swift; sourceTree = "<group>"; };
+		73DE7EB42C23BBBD008DBBA7 /* AudioUnitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitViewController.swift; sourceTree = "<group>"; };
+		73DE7EB62C23BBBD008DBBA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73DE7EC62C244D68008DBBA7 /* LooperButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LooperButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		73DE7E472C23BBBB008DBBA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73DE7E6E2C23BBBD008DBBA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73DE7E782C23BBBD008DBBA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73DE7E842C23BBBD008DBBA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		73DE7E412C23BBBB008DBBA7 = {
+			isa = PBXGroup;
+			children = (
+				733F024B2C262C5E0082F06B /* License */,
+				733F02492C262C120082F06B /* README.md */,
+				73DE7E4C2C23BBBB008DBBA7 /* Super Luper */,
+				73DE7E8B2C23BBBD008DBBA7 /* Super LuperExtension */,
+				73DE7E4B2C23BBBB008DBBA7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		73DE7E4B2C23BBBB008DBBA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				73DE7E4A2C23BBBB008DBBA7 /* Super Luper.app */,
+				73DE7E712C23BBBD008DBBA7 /* Super LuperTests.xctest */,
+				73DE7E7B2C23BBBD008DBBA7 /* Super LuperUITests.xctest */,
+				73DE7E872C23BBBD008DBBA7 /* Super LuperExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		73DE7E4C2C23BBBB008DBBA7 /* Super Luper */ = {
+			isa = PBXGroup;
+			children = (
+				73DE7E4D2C23BBBB008DBBA7 /* ContentView.swift */,
+				73DE7E652C23BBBB008DBBA7 /* Super_LuperApp.swift */,
+				73DE7E6A2C23BBBD008DBBA7 /* Assets.xcassets */,
+				73DE7E6C2C23BBBD008DBBA7 /* Super_Luper.entitlements */,
+				73DE7E4F2C23BBBB008DBBA7 /* Common */,
+				73DE7E602C23BBBB008DBBA7 /* Model */,
+				73DE7E672C23BBBB008DBBA7 /* Preview Content */,
+			);
+			path = "Super Luper";
+			sourceTree = "<group>";
+		};
+		73DE7E4F2C23BBBB008DBBA7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				73DE7E5B2C23BBBB008DBBA7 /* TypeAliases.swift */,
+				73DE7E502C23BBBB008DBBA7 /* UI */,
+				73DE7E532C23BBBB008DBBA7 /* Audio */,
+				73DE7E582C23BBBB008DBBA7 /* MIDI */,
+				73DE7E5D2C23BBBB008DBBA7 /* String */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		73DE7E502C23BBBB008DBBA7 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				73DE7E512C23BBBB008DBBA7 /* ViewControllerRepresentable.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		73DE7E532C23BBBB008DBBA7 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				73DE7E542C23BBBB008DBBA7 /* Synth.aif */,
+				73DE7E562C23BBBB008DBBA7 /* SimplePlayEngine.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		73DE7E582C23BBBB008DBBA7 /* MIDI */ = {
+			isa = PBXGroup;
+			children = (
+				73DE7E592C23BBBB008DBBA7 /* MIDIManager.swift */,
+			);
+			path = MIDI;
+			sourceTree = "<group>";
+		};
+		73DE7E5D2C23BBBB008DBBA7 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				73DE7E5E2C23BBBB008DBBA7 /* StringHelpers.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		73DE7E602C23BBBB008DBBA7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				73DE7E612C23BBBB008DBBA7 /* AudioUnitHostModel.swift */,
+				73DE7E632C23BBBB008DBBA7 /* AudioUnitViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		73DE7E672C23BBBB008DBBA7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				73DE7E682C23BBBB008DBBA7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		73DE7E8B2C23BBBD008DBBA7 /* Super LuperExtension */ = {
+			isa = PBXGroup;
+			children = (
+				73DE7EB62C23BBBD008DBBA7 /* Info.plist */,
+				73DE7E8E2C23BBBD008DBBA7 /* Common */,
+				73DE7EA12C23BBBD008DBBA7 /* Parameters */,
+				73DE7EA52C23BBBD008DBBA7 /* DSP */,
+				73DE7EA82C23BBBD008DBBA7 /* UI */,
+			);
+			path = "Super LuperExtension";
+			sourceTree = "<group>";
+		};
+		73DE7E8E2C23BBBD008DBBA7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				73DE7E8F2C23BBBD008DBBA7 /* Super_LuperExtension-Bridging-Header.h */,
+				73DE7E902C23BBBD008DBBA7 /* Parameters */,
+				73DE7E932C23BBBD008DBBA7 /* Utility */,
+				73DE7E982C23BBBD008DBBA7 /* Audio Unit */,
+				73DE7E9C2C23BBBD008DBBA7 /* DSP */,
+				73DE7EAD2C23BBBD008DBBA7 /* UI */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		73DE7E902C23BBBD008DBBA7 /* Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				73DE7E912C23BBBD008DBBA7 /* ParameterSpecBase.swift */,
+			);
+			path = Parameters;
+			sourceTree = "<group>";
+		};
+		73DE7E932C23BBBD008DBBA7 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				73DE7E942C23BBBD008DBBA7 /* CrossPlatform.swift */,
+				73DE7E962C23BBBD008DBBA7 /* String+Utils.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		73DE7E982C23BBBD008DBBA7 /* Audio Unit */ = {
+			isa = PBXGroup;
+			children = (
+				73DE7E992C23BBBD008DBBA7 /* Super_LuperExtensionAudioUnit.h */,
+				73DE7E9A2C23BBBD008DBBA7 /* Super_LuperExtensionAudioUnit.mm */,
+			);
+			path = "Audio Unit";
+			sourceTree = "<group>";
+		};
+		73DE7E9C2C23BBBD008DBBA7 /* DSP */ = {
+			isa = PBXGroup;
+			children = (
+				73DE7E9D2C23BBBD008DBBA7 /* Super_LuperExtensionAUProcessHelper.hpp */,
+				73DE7E9F2C23BBBD008DBBA7 /* Super_LuperExtensionBufferedAudioBus.hpp */,
+			);
+			path = DSP;
+			sourceTree = "<group>";
+		};
+		73DE7EA12C23BBBD008DBBA7 /* Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				73DE7EA22C23BBBD008DBBA7 /* Super_LuperExtensionParameterAddresses.h */,
+				73DE7EA32C23BBBD008DBBA7 /* Parameters.swift */,
+			);
+			path = Parameters;
+			sourceTree = "<group>";
+		};
+		73DE7EA52C23BBBD008DBBA7 /* DSP */ = {
+			isa = PBXGroup;
+			children = (
+				73DE7EA62C23BBBD008DBBA7 /* Super_LuperExtensionDSPKernel.hpp */,
+			);
+			path = DSP;
+			sourceTree = "<group>";
+		};
+		73DE7EA82C23BBBD008DBBA7 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				73DE7EA92C23BBBD008DBBA7 /* Super_LuperExtensionMainView.swift */,
+				73DE7EAB2C23BBBD008DBBA7 /* ParameterSlider.swift */,
+				73DE7EC62C244D68008DBBA7 /* LooperButton.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		73DE7EAD2C23BBBD008DBBA7 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				73DE7EB22C23BBBD008DBBA7 /* ObservableAUParameter.swift */,
+				73DE7EB42C23BBBD008DBBA7 /* AudioUnitViewController.swift */,
+				73DE7EAE2C23BBBD008DBBA7 /* Base.lproj */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		73DE7EAE2C23BBBD008DBBA7 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				73DE7EAF2C23BBBD008DBBA7 /* AudioUnitViewController.xib */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		73DE7E492C23BBBB008DBBA7 /* Super Luper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73DE7EBD2C23BBBD008DBBA7 /* Build configuration list for PBXNativeTarget "Super Luper" */;
+			buildPhases = (
+				73DE7E462C23BBBB008DBBA7 /* Sources */,
+				73DE7E472C23BBBB008DBBA7 /* Frameworks */,
+				73DE7E482C23BBBB008DBBA7 /* Resources */,
+				73DE7EBC2C23BBBD008DBBA7 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				73DE7E8A2C23BBBD008DBBA7 /* PBXTargetDependency */,
+			);
+			name = "Super Luper";
+			productName = "Super Luper";
+			productReference = 73DE7E4A2C23BBBB008DBBA7 /* Super Luper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		73DE7E702C23BBBD008DBBA7 /* Super LuperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73DE7EC02C23BBBD008DBBA7 /* Build configuration list for PBXNativeTarget "Super LuperTests" */;
+			buildPhases = (
+				73DE7E6D2C23BBBD008DBBA7 /* Sources */,
+				73DE7E6E2C23BBBD008DBBA7 /* Frameworks */,
+				73DE7E6F2C23BBBD008DBBA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				73DE7E732C23BBBD008DBBA7 /* PBXTargetDependency */,
+			);
+			name = "Super LuperTests";
+			productName = "Super LuperTests";
+			productReference = 73DE7E712C23BBBD008DBBA7 /* Super LuperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		73DE7E7A2C23BBBD008DBBA7 /* Super LuperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73DE7EC32C23BBBD008DBBA7 /* Build configuration list for PBXNativeTarget "Super LuperUITests" */;
+			buildPhases = (
+				73DE7E772C23BBBD008DBBA7 /* Sources */,
+				73DE7E782C23BBBD008DBBA7 /* Frameworks */,
+				73DE7E792C23BBBD008DBBA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				73DE7E7D2C23BBBD008DBBA7 /* PBXTargetDependency */,
+			);
+			name = "Super LuperUITests";
+			productName = "Super LuperUITests";
+			productReference = 73DE7E7B2C23BBBD008DBBA7 /* Super LuperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		73DE7E862C23BBBD008DBBA7 /* Super LuperExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73DE7EB92C23BBBD008DBBA7 /* Build configuration list for PBXNativeTarget "Super LuperExtension" */;
+			buildPhases = (
+				73DE7E832C23BBBD008DBBA7 /* Sources */,
+				73DE7E842C23BBBD008DBBA7 /* Frameworks */,
+				73DE7E852C23BBBD008DBBA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Super LuperExtension";
+			productName = "Super LuperExtension";
+			productReference = 73DE7E872C23BBBD008DBBA7 /* Super LuperExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		73DE7E422C23BBBB008DBBA7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					73DE7E492C23BBBB008DBBA7 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					73DE7E702C23BBBD008DBBA7 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 73DE7E492C23BBBB008DBBA7;
+					};
+					73DE7E7A2C23BBBD008DBBA7 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 73DE7E492C23BBBB008DBBA7;
+					};
+					73DE7E862C23BBBD008DBBA7 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 73DE7E452C23BBBB008DBBA7 /* Build configuration list for PBXProject "Super Luper" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 73DE7E412C23BBBB008DBBA7;
+			productRefGroup = 73DE7E4B2C23BBBB008DBBA7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				73DE7E492C23BBBB008DBBA7 /* Super Luper */,
+				73DE7E702C23BBBD008DBBA7 /* Super LuperTests */,
+				73DE7E7A2C23BBBD008DBBA7 /* Super LuperUITests */,
+				73DE7E862C23BBBD008DBBA7 /* Super LuperExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		73DE7E482C23BBBB008DBBA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73DE7E692C23BBBB008DBBA7 /* Preview Assets.xcassets in Resources */,
+				73DE7E6B2C23BBBD008DBBA7 /* Assets.xcassets in Resources */,
+				733F024A2C262C120082F06B /* README.md in Resources */,
+				733F024C2C262C5E0082F06B /* License in Resources */,
+				73DE7E552C23BBBB008DBBA7 /* Synth.aif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73DE7E6F2C23BBBD008DBBA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73DE7E792C23BBBD008DBBA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73DE7E852C23BBBD008DBBA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73DE7E9E2C23BBBD008DBBA7 /* Super_LuperExtensionAUProcessHelper.hpp in Resources */,
+				73DE7EA72C23BBBD008DBBA7 /* Super_LuperExtensionDSPKernel.hpp in Resources */,
+				73DE7EA02C23BBBD008DBBA7 /* Super_LuperExtensionBufferedAudioBus.hpp in Resources */,
+				73DE7EB12C23BBBD008DBBA7 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		73DE7E462C23BBBB008DBBA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73DE7E622C23BBBB008DBBA7 /* AudioUnitHostModel.swift in Sources */,
+				73DE7E662C23BBBB008DBBA7 /* Super_LuperApp.swift in Sources */,
+				73DE7E642C23BBBB008DBBA7 /* AudioUnitViewModel.swift in Sources */,
+				73DE7E4E2C23BBBB008DBBA7 /* ContentView.swift in Sources */,
+				73DE7E522C23BBBB008DBBA7 /* ViewControllerRepresentable.swift in Sources */,
+				73DE7E5F2C23BBBB008DBBA7 /* StringHelpers.swift in Sources */,
+				73DE7E5A2C23BBBB008DBBA7 /* MIDIManager.swift in Sources */,
+				73DE7E5C2C23BBBB008DBBA7 /* TypeAliases.swift in Sources */,
+				73DE7E572C23BBBB008DBBA7 /* SimplePlayEngine.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73DE7E6D2C23BBBD008DBBA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73DE7E772C23BBBD008DBBA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73DE7E832C23BBBD008DBBA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73DE7EA42C23BBBD008DBBA7 /* Parameters.swift in Sources */,
+				73DE7E922C23BBBD008DBBA7 /* ParameterSpecBase.swift in Sources */,
+				73DE7EC72C244D68008DBBA7 /* LooperButton.swift in Sources */,
+				73DE7EB32C23BBBD008DBBA7 /* ObservableAUParameter.swift in Sources */,
+				73DE7E952C23BBBD008DBBA7 /* CrossPlatform.swift in Sources */,
+				73DE7E9B2C23BBBD008DBBA7 /* Super_LuperExtensionAudioUnit.mm in Sources */,
+				73DE7EB52C23BBBD008DBBA7 /* AudioUnitViewController.swift in Sources */,
+				73DE7EAC2C23BBBD008DBBA7 /* ParameterSlider.swift in Sources */,
+				73DE7EAA2C23BBBD008DBBA7 /* Super_LuperExtensionMainView.swift in Sources */,
+				73DE7E972C23BBBD008DBBA7 /* String+Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		73DE7E732C23BBBD008DBBA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 73DE7E492C23BBBB008DBBA7 /* Super Luper */;
+			targetProxy = 73DE7E722C23BBBD008DBBA7 /* PBXContainerItemProxy */;
+		};
+		73DE7E7D2C23BBBD008DBBA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 73DE7E492C23BBBB008DBBA7 /* Super Luper */;
+			targetProxy = 73DE7E7C2C23BBBD008DBBA7 /* PBXContainerItemProxy */;
+		};
+		73DE7E8A2C23BBBD008DBBA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 73DE7E862C23BBBD008DBBA7 /* Super LuperExtension */;
+			targetProxy = 73DE7E892C23BBBD008DBBA7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		73DE7EAF2C23BBBD008DBBA7 /* AudioUnitViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				73DE7EB02C23BBBD008DBBA7 /* Base */,
+			);
+			name = AudioUnitViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		73DE7EB72C23BBBD008DBBA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		73DE7EB82C23BBBD008DBBA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		73DE7EBA2C23BBBD008DBBA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2SQD5JQVR8;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Super LuperExtension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Super LuperExtension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brochweb.Super-Luper.Super-LuperExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Super LuperExtension/Common/Super_LuperExtension-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		73DE7EBB2C23BBBD008DBBA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2SQD5JQVR8;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Super LuperExtension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Super LuperExtension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brochweb.Super-Luper.Super-LuperExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Super LuperExtension/Common/Super_LuperExtension-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		73DE7EBE2C23BBBD008DBBA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Super Luper/Super_Luper.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Super Luper/Preview Content\"";
+				DEVELOPMENT_TEAM = 2SQD5JQVR8;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Super Luper";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				OTHER_LDFLAGS = (
+					"-framework",
+					AudioToolbox,
+					"-framework",
+					AVFoundation,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "asherwhite.Super-Luper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		73DE7EBF2C23BBBD008DBBA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Super Luper/Super_Luper.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Super Luper/Preview Content\"";
+				DEVELOPMENT_TEAM = 2SQD5JQVR8;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Super Luper";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				OTHER_LDFLAGS = (
+					"-framework",
+					AudioToolbox,
+					"-framework",
+					AVFoundation,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "asherwhite.Super-Luper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		73DE7EC12C23BBBD008DBBA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2SQD5JQVR8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "asherwhite.Super-LuperTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Super Luper.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Super Luper";
+			};
+			name = Debug;
+		};
+		73DE7EC22C23BBBD008DBBA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2SQD5JQVR8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "asherwhite.Super-LuperTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Super Luper.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Super Luper";
+			};
+			name = Release;
+		};
+		73DE7EC42C23BBBD008DBBA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2SQD5JQVR8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "asherwhite.Super-LuperUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Super Luper";
+			};
+			name = Debug;
+		};
+		73DE7EC52C23BBBD008DBBA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2SQD5JQVR8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "asherwhite.Super-LuperUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Super Luper";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		73DE7E452C23BBBB008DBBA7 /* Build configuration list for PBXProject "Super Luper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73DE7EB72C23BBBD008DBBA7 /* Debug */,
+				73DE7EB82C23BBBD008DBBA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73DE7EB92C23BBBD008DBBA7 /* Build configuration list for PBXNativeTarget "Super LuperExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73DE7EBA2C23BBBD008DBBA7 /* Debug */,
+				73DE7EBB2C23BBBD008DBBA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73DE7EBD2C23BBBD008DBBA7 /* Build configuration list for PBXNativeTarget "Super Luper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73DE7EBE2C23BBBD008DBBA7 /* Debug */,
+				73DE7EBF2C23BBBD008DBBA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73DE7EC02C23BBBD008DBBA7 /* Build configuration list for PBXNativeTarget "Super LuperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73DE7EC12C23BBBD008DBBA7 /* Debug */,
+				73DE7EC22C23BBBD008DBBA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73DE7EC32C23BBBD008DBBA7 /* Build configuration list for PBXNativeTarget "Super LuperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73DE7EC42C23BBBD008DBBA7 /* Debug */,
+				73DE7EC52C23BBBD008DBBA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 73DE7E422C23BBBB008DBBA7 /* Project object */;
+}
